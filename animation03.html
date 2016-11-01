@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/wobble.css"/>
+		<style type="text/css">
+		/*
+		 * eg:   .a.b{}
+		 *         复合选择器:为同时具有a类名和b类名的标签设置样式
+		 */
+			.div1{
+				width: 100px;
+				height: 100px;
+				background: red;
+				margin: 100px auto;
+			}
+			/*第三方的第二种用法*/
+			.div2{
+				width: 100px;height: 100px;
+				background: blueviolet;
+				margin: 200px auto;
+				animation: bounce 2s infinite;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!--第三方动画库的使用 
+			  1.名字叫:animation.css
+			  2.封装了很多工作中常用的动画
+			  3.在使用该第三方的时候,需要加上animated类名
+		-->
+		<!--
+			主要分类:可以参考官网自己设置
+			bounce:弹性动画类
+			flash:动画消失类
+			pulse:脉冲动画类
+			shake:抖动动画类		
+		-->
+		<a href="https://daneden.github.io/animate.css/"><h2>animation.css</h2></a>	
+		<a href="index.html">返回主页</a>
+		<div class="div1 animated rotateOut infinite"></div>
+		<div class="div2"></div>
+	</body>
+</html>
