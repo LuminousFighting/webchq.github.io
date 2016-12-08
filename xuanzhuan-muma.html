@@ -8,26 +8,36 @@
 		
 		body{			
 			transform-style: preserve-3d;
+			 -webkit-transform-style: preserve-3d;
+			  -moz-transform-style: preserve-3d;	
+			   -ms-transform-style: preserve-3d;	
 			background: black;			
-			  perspective:2000px;
-			  perspective-origin: top;
-			
+			perspective:2000px;
+			 -webkit-perspective: 2000px;
+			   -moz-perspective: 2000px;
+			    -ms-perspective: 2000px;
+			perspective-origin: top;
+			 -webkit-perspective-origin: top;
+			  -ms-perspective-origin: top;
+			    -moz-perspective-origin: top;			
 		}
 			#box{				
 				width: 120px;height: 200px;
 				position: relative;
-				margin: 100px auto;
+				margin: 0 auto;
 				/*background: red;*/				
-				transform-style: preserve-3d ;				
+				transform-style: preserve-3d ;	
+				-webkit-transform-style: preserve-3d;
+				-moz-transform-style: preserve-3d;	
+				-ms-transform-style: preserve-3d;				
 				animation:hq 10s linear infinite;
 				/*transform: rotateZ(90deg);*/
 				padding-top: 200px;
-				
-				
 			}
 			#box div{
 				position: absolute;
 				border-radius: 20px;
+				 -webkit-border-radius: 20px;
 				overflow: hidden;
 				-webkit-box-reflect:below 5px linear-gradient(to top,red 0%,transparent 20%)
 				
@@ -78,10 +88,12 @@
 				background: #000000;
 				cursor: pointer;
 			}
+			.iframe{position: absolute;left: 0;right: 0;margin: auto;bottom: 0;}
 		</style>
 	</head>
 	<body>
 		<h1>旋转木马</h1><span>纯css</span> <a href="index.html"><button>返回主页</button></a>
+		<iframe class='iframe' frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=34923851&auto=1&height=66"></iframe>		
 		<div id="box">
 			<div>
 				<img src="images/muma/1.jpg"/>
