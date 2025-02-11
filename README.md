@@ -1,1 +1,1 @@
-# [这是一个链接]([webchq.gthub.io](https://webchq.github.io/))
+# [这是一个链接](https://webchq.github.io/)
